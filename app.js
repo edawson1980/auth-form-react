@@ -21,7 +21,8 @@ authorize(e) {
 render(){
   let login = (
     <form action="#">
-
+      <input type="password" placeholder="Password" />
+      <input type="submit"/>
     </form>
   );
   return(
