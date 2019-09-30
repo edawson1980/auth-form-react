@@ -39,6 +39,8 @@ render(){
   return(
     <div id="authorization">
       <h1>{this.state.authorized ? 'Contact' : 'Enter the Password'}</h1>
+      {/* if user is not authorized, show login form */}
+      {this.state.authorized ? contactInfo : login}
     </div>
   );
 }
