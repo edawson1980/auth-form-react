@@ -19,6 +19,11 @@ authorize(e) {
   });
 }
 render(){
+  let login = (
+    <form action="#">
+
+    </form>
+  );
   return(
     <div id="authorization">
       <h1>{this.state.authorized ? 'Contact' : 'Enter the Password'}</h1>
