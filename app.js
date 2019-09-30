@@ -10,6 +10,7 @@ class Contact extends React.Component{
   };
   this.authorize = this.authorize.bind(this);
 }
+//authorize function checks to see if the password is correct
 authorize(e) {
   const password = e.target.querySelector(
     'input[type="password"]').value;
@@ -20,6 +21,7 @@ authorize(e) {
 }
 render(){
   let login = (
+    //onSubmit event handler runs an instance of the authorize function.  'this' refers to the object that 'render' is called on
     <form action="#" onSubmit={this.authorize}>
       <input type="password" placeholder="Password" />
       <input type="submit"/>
