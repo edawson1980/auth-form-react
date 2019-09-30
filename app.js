@@ -25,6 +25,7 @@ render(){
       <input type="submit"/>
     </form>
   );
+  //moving the data out of the general return allows us to determine when contactInfo is shown
   let contactInfo = (
     <ul>
       <li>
